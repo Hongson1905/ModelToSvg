@@ -2,6 +2,7 @@ package bean.function;
 
 import ch.ethz.ssh2.SCPClient;
 import ch.ethz.ssh2.Session;
+import ui.FMain;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,10 +13,11 @@ import java.util.Vector;
  * 模型转换业务逻辑
  */
 public class ModelMerge {
+    public static boolean depand = true;
     public static MakeConn makeConn = new MakeConn();//创建远程连接
     private int backCode = -999;
     private String backResult = "";
-    private Thread tmpThread;
+    private Thread tmpThread = new Thread();
     private String cmd;
     public Vector<String> rigthGraph;
     public Vector<String> errGraph;
@@ -29,11 +31,32 @@ public class ModelMerge {
     public ModelMerge(){
     }
     //压缩文件转图
-    public void startMerge(JTextField textField,JTextArea textArea){
-        System.out.println("=== 压缩文件转图-start ===");
-        startInput(textField,textArea);
-        StartConvertMerge();
-        System.out.println("=== 压缩文件转图-end ===");
+    public void startMerge(final JTextField textField, final JTextArea textArea){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("=== 压缩文件转图-start ===");
+                if(depand&&!tmpThread.isAlive()) startInput(textField,textArea);
+                while (tmpThread.isAlive()) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(depand&&!tmpThread.isAlive()) StartJustMerge(textField,textArea);
+                while (tmpThread.isAlive()) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(depand&&!tmpThread.isAlive()) StartConvertMerge(textField,textArea);
+                System.out.println("=== 压缩文件转图-end ===");
+            }
+        }).start();
+
 
     }
     //模型导入：解压，入库
@@ -42,6 +65,7 @@ public class ModelMerge {
             @Override
             public void run() {
                 System.out.println("=== 模型导入-start ===");
+                depand = true;
                 textField.setText("压缩文件解压入库");
                 //清空放置解压文件的文件夹
                 textArea.append("清空data/cimdata/cime...");
@@ -54,6 +78,7 @@ public class ModelMerge {
                     System.out.println(PropertyGet.prop.getProperty("zipNow")+":清空失败");
                     textArea.append("data/cimdata/cime清空失败.");
                     textArea.append("\n");
+                    ModelMerge.depand = false;
                 }
                 //清空放置入库文件的文件夹
                 textArea.append("清空data/cimdata/oldcime...");
@@ -62,10 +87,13 @@ public class ModelMerge {
                     System.out.println(PropertyGet.prop.getProperty("zipEnd")+":清空完成");
                     textArea.append("data/cimdata/oldcime清空完成.");
                     textArea.append("\n");
+                    textArea.append("解压模型文件...");
+                    textArea.append("\n");
                 }else {
                     System.out.println(PropertyGet.prop.getProperty("zipEnd")+":清空失败");
                     textArea.append("data/cimdata/oldcime清空失败.");
                     textArea.append("\n");
+                    ModelMerge.depand = false;
                 }
 //                启动模型解压和导入程序
                 try {
@@ -89,6 +117,7 @@ public class ModelMerge {
                 } catch (IOException e) {
                     System.out.println("=== model_mul_handle启动错误！===");
                     e.printStackTrace();
+                    ModelMerge.depand = false;
                 }
                 try {
                     Thread.sleep(3000);
@@ -97,10 +126,12 @@ public class ModelMerge {
                 }
 //                判断哪些模型正在入库
                 System.out.println(getDirFile(PropertyGet.prop.getProperty("zipNow")).size());
-                boolean depand = true;
+                boolean tmpDepand = true;
                 Vector<String> tmpInDB = new Vector<String>();
-                while (depand||getDirFile(PropertyGet.prop.getProperty("zipNow")).size()!=0){
-                    if(getDirFile(PropertyGet.prop.getProperty("zipNow")).size()!=0) depand = false;
+                int emptyNum = 0;
+                while (tmpDepand||getDirFile(PropertyGet.prop.getProperty("zipNow")).size()!=0||(emptyNum<3)){
+                    if(!tmpDepand&&getDirFile(PropertyGet.prop.getProperty("zipNow")).size()==0) emptyNum++;
+                    if(getDirFile(PropertyGet.prop.getProperty("zipNow")).size()!=0) tmpDepand = false;
                     tmpVector = getDirFile(PropertyGet.prop.getProperty("zipNow"));
 
                     for(int i = 0;i<tmpVector.size();i++){
@@ -127,12 +158,16 @@ public class ModelMerge {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+                    if (!depand) {
+                        return;
+                    }
                 }
                 for(int i = 0;i<tmpInDB.size();i++){
                     textArea.append(tmpInDB.get(i)+":导入完成.");
                     textArea.append("\n");
                     textArea.repaint();
                 }
+                //强制关闭解压程序
                 makeConn.execute("killall "+PropertyGet.prop.getProperty("svgModelZip"));
                 //session.execCommand("killall "+PropertyGet.prop.getProperty("svgModelZip"));
                 System.out.println("=Info:"+"killall "+PropertyGet.prop.getProperty("svgModelZip"));
@@ -141,8 +176,8 @@ public class ModelMerge {
                 for (String a:errContent){
                     textArea.append(a);
                     textArea.append("\n");
-                    textArea.repaint();·
-                }+
+                    textArea.repaint();
+                }
 
                 System.out.println("=== 模型导入-end ===");
             }
@@ -157,20 +192,28 @@ public class ModelMerge {
     }
 
     //模型拼接
-    public void StartJustMerge(final JLabel titlabel,final JTextField subTitle,final JLabel processLabel, final JTextArea processArea){
+    public void StartJustMerge(final JTextField subTitle ,final JTextArea processArea){
         tmpThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("=== 模型拼接-start ===");
-                setLabelIcon(titlabel,"");
-                subTitle.setText("");
-                setLabelIcon(processLabel,"");
+                subTitle.setText("模型拼接");
                 cmd = "./"+PropertyGet.prop.getProperty("modelMerge")+PropertyGet.prop.getProperty("model_merge_proc");
                 System.out.println(cmd);
+                processArea.append("=== 模型拼接 ===");
+                processArea.append("\n");
+                processArea.append(cmd);
+                processArea.append("\n");
+                processArea.append("模型拼接中...");
+                processArea.append("\n");
                 session = makeConn.getSession();
                 backResult = makeConn.executeSuccess(cmd);
-
                 System.out.println("模型拼接返回值："+makeConn.exitCode);
+                if(makeConn.exitCode == 0){
+                    processArea.append("=== 模型拼接完成 ===");
+                    processArea.append("\n");
+                    processArea.repaint();
+                }
                 System.out.println("=== 模型拼接-end ===");
             }
         });
@@ -178,42 +221,57 @@ public class ModelMerge {
     }
 
     //图模转换
-    public void StartConvertMerge(){
+    public void StartConvertMerge(final JTextField subTitle,final JTextArea processArea){
+
         tmpThread = new Thread(new Runnable() {
             @Override
             public void run() {
-                if(getDirFile(PropertyGet.prop.getProperty("resultUrl")).size()==1){
-                    System.out.println(PropertyGet.prop.getProperty("resultUrl")+":下没有模型文件！");
-                    return;
-                }
+
                 System.out.println("=== 图模转换-start ===");
+                subTitle.setText("图模转换");
+                processArea.append("=== 图模转换 ===");
+                processArea.append("\n");
                 cmd = "./"+PropertyGet.prop.getProperty("modelConvert")+PropertyGet.prop.getProperty("model_convert_proc");
+                processArea.append(cmd+"\n");
                 System.out.println(cmd);
                 backResult = makeConn.execute(cmd);
-
+                processArea.append(backResult+"\n");
                 System.out.println(backResult);
                 System.out.println(makeConn.exitCode);
-                cmd = "ls "+PropertyGet.prop.getProperty("resultUrl");
-                System.out.println(cmd);
-                backResult = makeConn.execute(cmd);
-
-
-                String[] tmpResult = backResult.split("\\s+");
+                System.out.println(getDirFile(PropertyGet.prop.getProperty("resultUrl")).size());
+                if(getDirFile(PropertyGet.prop.getProperty("resultUrl")).size()<=0){
+                    JOptionPane.showMessageDialog(FMain.mainFrame,
+                            "图形文件不存在!\n请检查："+PropertyGet.prop.getProperty("resultUrl")+"下的文件！", "系统信息", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("--- 未检测到图形文件 ---");
+                    System.out.println(PropertyGet.prop.getProperty("resultUrl")+":下没有图形文件！");
+                    return;
+                }
+                //查看转换结果
+                tmpVector = new Vector<String>();
+                tmpVector = getDirFile(PropertyGet.prop.getProperty("resultUrl"));
                 rigthGraph = new Vector<String>();
                 errGraph = new Vector<String>();
-                for(String a:tmpResult){
+                for(String a:tmpVector){
                     if(a.indexOf("sys.pic.g.svg")>=0){
                         rigthGraph.add(a);
                     }else if(a.indexOf("B.svg")>=0){
                         errGraph.add(a);
                     }
                 }
+                processArea.append("转图成功："+rigthGraph.size()+"\n");
                 for (String a:rigthGraph){
+                    processArea.append(a+"\n");
                     System.out.println(a);
                 }
+                processArea.append("转图失败："+errGraph.size()+"\n");
                 for (String a:errGraph){
+                    processArea.append(a+"\n");
                     System.out.println(a);
                 }
+                if(cleanDir(PropertyGet.prop.getProperty("resultUrl"))){
+                    processArea.append(PropertyGet.prop.getProperty("resultUrl")+" 清空完成 ！"+"\n");
+                }
+                processArea.append("=== 图模转换完成 ==="+"\n");
                 System.out.println("图模转换返回值："+makeConn.exitCode);
                 System.out.println("=== 图模转换-end ===");
                 //System.out.println("清空："+PropertyGet.prop.getProperty("resultUrl")+":"+cleanDir(PropertyGet.prop.getProperty("resultUrl")));
@@ -305,8 +363,10 @@ public class ModelMerge {
                             isDelete = false;
                         }
                     }
-                    if(isDelete) tmpFile.delete();
-                    if(isDelete) errContent.remove(errContent.size()-1);
+                    if(isDelete) {
+                        System.out.println("======= 删除"+tmpFile.toString()+tmpFile.delete()+"=======");
+                        errContent.remove(errContent.size()-1);
+                    }
                     reader.close();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();

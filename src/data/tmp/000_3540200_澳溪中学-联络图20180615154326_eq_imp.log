@@ -5,762 +5,762 @@ baodian
 xiamen
 Success in set uft8
 0 : UPDATE subcontrolarea SET  name='东宅变电站972' WHERE id=113715892470153515;
-0 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =240
+0 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =270
 
 1 : UPDATE subcontrolarea SET  name='塘边变电站942' WHERE id=113715892470153516;
-1 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
+1 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =248
 
 2 : UPDATE substation SET  name='东宅变电站972' WHERE id=113997367446864945;
-2 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =246
+2 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 3 : UPDATE substation SET  name='厦门市城东中学' WHERE id=113997367446865181;
-3 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
+3 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =299
 
 4 : UPDATE substation SET  name='塘边变电站942' WHERE id=113997367446864947;
-4 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =250
+4 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =245
 
 5 : UPDATE substation SET  name='洪塘仓库#2环网柜' WHERE id=113997367446864948;
-5 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =307
+5 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =277
 
 6 : UPDATE voltagelevel SET  name='厦门.塘边变电站942/010' WHERE id=113152942516732938;
-6 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =207
+6 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 7 : UPDATE voltagelevel SET  name='厦门.厦门市城东中学/010' WHERE id=113152942516733174;
-7 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =322
+7 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =332
 
 8 : UPDATE voltagelevel SET  name='厦门.洪塘仓库#2环网柜/010' WHERE id=113152942516732940;
-8 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
+8 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =245
 
 9 : UPDATE voltagelevel SET  name='厦门.东宅变电站972/010' WHERE id=113152942516732941;
-9 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =240
+9 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =301
 
 10 : UPDATE breaker SET  name='厦门.塘边变电站942/10kV.东宅线#25东宅线#25开关开关', `describe`='东宅线#25东宅线#25开关开关', ind=1145603174002944540, jnd=1145603174002944541 WHERE id=114560317400294454;
-10 : ## insert  into dmdb: tot_sec_lf=0.0059,total_lf =5920
+10 : ## insert  into dmdb: tot_sec_lf=0.0101,total_lf =10067
 
 11 : UPDATE breaker SET  name='厦门.塘边变电站942/10kV.城东中学#8杆负荷开关', `describe`='城东中学#8杆负荷开关', ind=1145603174002948560, jnd=1145603174002948561 WHERE id=114560317400294856;
-11 : ## insert  into dmdb: tot_sec_lf=0.3316,total_lf =331622
+11 : ## insert  into dmdb: tot_sec_lf=0.0731,total_lf =73096
 
 12 : UPDATE breaker SET  name='厦门.洪塘仓库#2环网柜/10kV.洪塘仓库#2环网柜东宅线903开关', `describe`='洪塘仓库#2环网柜东宅线903开关', brk_type='8', ind=1145603174002944550, jnd=1145603174002944551 WHERE id=114560317400294455;
-12 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =520
+12 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =491
 
 13 : UPDATE breaker SET  name='厦门.洪塘仓库#2环网柜/10kV.洪塘仓库#2环网柜洪塘线901开关', `describe`='洪塘仓库#2环网柜洪塘线901开关', brk_type='8', ind=1145603174002944560, jnd=1145603174002944561 WHERE id=114560317400294456;
-13 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =426
+13 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =465
 
 14 : UPDATE breaker SET  name='厦门.洪塘仓库#2环网柜/10kV.洪塘仓库#2环网柜龙泉Ⅱ回902负荷开关', `describe`='洪塘仓库#2环网柜龙泉Ⅱ回902负荷开关', brk_type='3', ind=1145603174002944570, jnd=1145603174002944571 WHERE id=114560317400294457;
-14 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =467
+14 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =424
 
 15 : UPDATE breaker SET  name='厦门.塘边变电站942/10kV.洪塘线#22杆断路器', `describe`='洪塘线#22杆断路器', ind=1145603174002948570, jnd=1145603174002948571 WHERE id=114560317400294857;
-15 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =443
+15 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =435
 
 16 : UPDATE breaker SET  name='厦门.塘边变电站942/10kV.龙泉Ⅱ回#1杆断路器', `describe`='龙泉Ⅱ回#1杆断路器', ind=1145603174002944590, jnd=1145603174002944591 WHERE id=114560317400294459;
-16 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =395
+16 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =426
 
 17 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.东宅线#25刀闸', `describe`='东宅线#25刀闸', ind=1168121172140599470, jnd=1168121172140600050 WHERE id=114841792377006940;
-17 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =462
+17 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =514
 
 18 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.东宅线#A型杆杆刀闸', `describe`='东宅线#A型杆杆刀闸', ind=1168121172140599980, jnd=1168121172140599820 WHERE id=114841792377006941;
-18 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =429
+18 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =407
 
 19 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.东霞Ⅱ回#1杆高压刀闸', `describe`='东霞Ⅱ回#1杆高压刀闸', ind=1168121172140600000, jnd=1168121172140599510 WHERE id=114841792377006942;
-19 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =402
+19 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =404
 
 20 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.城东中学#8杆刀闸', `describe`='城东中学#8杆刀闸', ind=1168121172140646630, jnd=1168121172140646680 WHERE id=114841792377007182;
-20 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =434
+20 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =419
 
 21 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.洪塘线#14刀闸', `describe`='洪塘线#14刀闸', ind=1168121172140646550, jnd=1168121172140646720 WHERE id=114841792377007183;
-21 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =424
+21 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =401
 
 22 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.洪塘线#22杆高压刀闸', `describe`='洪塘线#22杆高压刀闸', ind=1168121172140646540, jnd=1168121172140646660 WHERE id=114841792377007184;
-22 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =416
+22 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =393
 
 23 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.洪塘线#33刀闸', `describe`='洪塘线#33刀闸', ind=1168121172140647010, jnd=1168121172140646900 WHERE id=114841792377007185;
-23 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =425
+23 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =411
 
 24 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.洪塘线#A杆刀闸', `describe`='洪塘线#A杆刀闸', ind=1168121172140600020, jnd=1168121172140599910 WHERE id=114841792377006945;
-24 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =512
+24 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =390
 
 25 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.龙泉Ⅱ回#1杆高压刀闸', `describe`='龙泉Ⅱ回#1杆高压刀闸', ind=1168121172140599830, jnd=1168121172140600040 WHERE id=114841792377006946;
-25 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =438
+25 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =430
 
 26 : UPDATE disconnector SET  name='厦门.塘边变电站942/10kV.龙泉Ⅱ回#29杆高压刀闸', `describe`='龙泉Ⅱ回#29杆高压刀闸', ind=1168121172140599500, jnd=1168121172140599940 WHERE id=114841792377006947;
-26 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =394
+26 : ## insert  into dmdb: tot_sec_lf=0.0004,total_lf =405
 
 27 : UPDATE busbarsection SET  name='厦门.洪塘仓库#2环网柜/10kV.洪塘仓库#2环网柜10kV母线', `describe`='洪塘仓库#2环网柜10kV母线', nd=1154047423304190530 WHERE id=115404742330419053;
-27 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =491
+27 : ## insert  into dmdb: tot_sec_lf=0.0005,total_lf =468
 
 28 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.-连接线-', `describe`='-连接线-', ind=1145603174002948570, jnd=1168121172140646540 WHERE id=116530642237307063;
-28 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =290
+28 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
 
 29 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.10kV洪塘线#12杆故障指示器', `describe`='10kV洪塘线#12杆故障指示器', ind=1168121172140646550, jnd=1168121172140646690 WHERE id=116530642237307064;
-29 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
+29 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =297
 
 30 : UPDATE aclinesegment SET  name='厦门.厦门市城东中学.30000006_1225897', ind=1168121172140646570, jnd=1168121172140646590 WHERE id=116530642237307065;
-30 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =247
+30 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =272
 
 31 : UPDATE aclinesegment SET  name='厦门.洪塘仓库#2环网柜.32400000_1223604', ind=1145603174002944561, jnd=1154047423304190530 WHERE id=116530642237304688;
-31 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =195
+31 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =239
 
 32 : UPDATE aclinesegment SET  name='厦门.洪塘仓库#2环网柜.32400000_1223604_a', ind=1154047423304190530, jnd=1145603174002944570 WHERE id=116530642237304689;
-32 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =215
+32 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =306
 
 33 : UPDATE aclinesegment SET  name='厦门.洪塘仓库#2环网柜.32400000_1223604_b', ind=1168121172140600150, jnd=1145603174002944571 WHERE id=116530642237304693;
-33 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =281
+33 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =241
 
 34 : UPDATE aclinesegment SET  name='厦门.洪塘仓库#2环网柜.32400000_1223604_c', ind=1168121172140599330, jnd=1145603174002944550 WHERE id=116530642237304690;
-34 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
+34 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 35 : UPDATE aclinesegment SET  name='厦门.洪塘仓库#2环网柜.32400000_1223604_d', ind=1145603174002944551, jnd=1154047423304190530 WHERE id=116530642237304691;
-35 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =238
+35 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =246
 
 36 : UPDATE aclinesegment SET  name='厦门.洪塘仓库#2环网柜.32400000_1223604_e', ind=1168121172140599710, jnd=1145603174002944560 WHERE id=116530642237304692;
-36 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =243
+36 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =273
 
 37 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#12-石浔线#13东宅线#13', `describe`='东宅线#12-石浔线#13东宅线#13', ind=1168121172140599740, jnd=1168121172140599270 WHERE id=116530642237304694;
-37 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =225
+37 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
 
 38 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#17与东宅线#18间的导线', `describe`='东宅线#17与东宅线#18间的导线', ind=1168121172140599730, jnd=1168121172140599180 WHERE id=116530642237304695;
-38 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =303
+38 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =278
 
 39 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#18-东宅线#19', `describe`='东宅线#18-东宅线#19', ind=1168121172140599190, jnd=1168121172140599180 WHERE id=116530642237304696;
-39 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =229
+39 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =255
 
 40 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#21与东宅线#22间导线', `describe`='东宅线#21与东宅线#22间导线', ind=1168121172140599210, jnd=1145603174002944541 WHERE id=116530642237304697;
-40 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =235
+40 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =249
 
 41 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#3与东宅线#4间导线', `describe`='东宅线#3与东宅线#4间导线', ind=1168121172140599230, jnd=1168121172140599260 WHERE id=116530642237304698;
-41 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =215
+41 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =297
 
 42 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#7与东宅线#8间导线', `describe`='东宅线#7与东宅线#8间导线', ind=1168121172140599250, jnd=1168121172140599260 WHERE id=116530642237304699;
-42 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =314
+42 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
 
 43 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#9与东宅线#10间导线', `describe`='东宅线#9与东宅线#10间导线', ind=1168121172140599270, jnd=1168121172140599250 WHERE id=116530642237304700;
-43 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =238
+43 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 44 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#A型杆-东宅线#1', `describe`='东宅线#A型杆-东宅线#1', ind=1168121172140599290, jnd=1168121172140599230 WHERE id=116530642237304701;
-44 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =240
+44 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =288
 
 45 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#A型杆-东宅线903', `describe`='东宅线#A型杆-东宅线903', ind=1168121172140599340, jnd=1168121172140599810 WHERE id=116530642237304702;
-45 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =238
+45 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =246
 
 46 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东宅线#A型杆-东宅线903_a', `describe`='东宅线#A型杆-东宅线903', ind=1168121172140599330, jnd=1168121172140599340 WHERE id=116530642237304703;
-46 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
+46 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =273
 
 47 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东霞Ⅱ回#13-东霞Ⅱ回#14', `describe`='东霞Ⅱ回#13-东霞Ⅱ回#14', ind=1168121172140599350, jnd=1168121172140599360 WHERE id=116530642237304704;
 47 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 48 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东霞Ⅱ回#2-东霞Ⅱ回#3', `describe`='东霞Ⅱ回#2-东霞Ⅱ回#3', ind=1168121172140599370, jnd=1168121172140599380 WHERE id=116530642237304705;
-48 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
+48 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =272
 
 49 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东霞Ⅱ回#5-东霞Ⅱ回#6', `describe`='东霞Ⅱ回#5-东霞Ⅱ回#6', ind=1168121172140599370, jnd=1168121172140599400 WHERE id=116530642237304706;
-49 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
+49 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =286
 
 50 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东霞Ⅱ回#9-东霞Ⅱ回#10', `describe`='东霞Ⅱ回#9-东霞Ⅱ回#10', ind=1168121172140599350, jnd=1168121172140599400 WHERE id=116530642237304707;
-50 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
+50 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
 
 51 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸', `describe`='东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸', ind=1168121172140599460, jnd=1168121172140599990 WHERE id=116530642237304708;
-51 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =193
+51 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =281
 
 52 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸_a', `describe`='东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸', ind=1168121172140599450, jnd=1168121172140599460 WHERE id=116530642237304709;
-52 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =231
+52 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =253
 
 53 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.厦门市城东中学901-城东中学#8', `describe`='厦门市城东中学901-城东中学#8', ind=1168121172140646590, jnd=1168121172140646600 WHERE id=116530642237307066;
-53 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =233
+53 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 54 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.厦门市城东中学901-城东中学#8_a', `describe`='厦门市城东中学901-城东中学#8', ind=1168121172140646600, jnd=1168121172140647000 WHERE id=116530642237307067;
-54 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
+54 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =273
 
 55 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.未命名', `describe`='未命名', ind=1168121172140599470, jnd=1168121172140599360 WHERE id=116530642237304710;
-55 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =209
+55 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =253
 
 56 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.未命名_a', `describe`='未命名', ind=1168121172140646630, jnd=1168121172140646890 WHERE id=116530642237307068;
-56 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =226
+56 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
 
 57 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.未命名_b', `describe`='未命名', ind=1168121172140646780, jnd=1168121172140646660 WHERE id=116530642237307069;
-57 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =286
+57 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =312
 
 58 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.未命名_c', `describe`='未命名', ind=1145603174002948560, jnd=1168121172140646680 WHERE id=116530642237307070;
-58 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =213
+58 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =288
 
 59 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.未命名_d', `describe`='未命名', ind=1168121172140600110, jnd=1168121172140599500 WHERE id=116530642237304711;
-59 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =246
+59 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =242
 
 60 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.未命名_e', `describe`='未命名', ind=1168121172140599510, jnd=1168121172140599380 WHERE id=116530642237304712;
-60 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =221
+60 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =301
 
 61 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#12与洪塘线#13间导线', `describe`='洪塘线#12与洪塘线#13间导线', ind=1168121172140646690, jnd=1168121172140646950 WHERE id=116530642237307071;
-61 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =219
+61 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =237
 
 62 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#15与洪塘线#16间导线', `describe`='洪塘线#15与洪塘线#16间导线', ind=1168121172140646730, jnd=1168121172140646720 WHERE id=116530642237307072;
-62 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =222
+62 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
 
 63 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#18与洪塘线#17间的导线', `describe`='洪塘线#18与洪塘线#17间的导线', ind=1168121172140646730, jnd=1168121172140646750 WHERE id=116530642237307073;
-63 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
+63 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 64 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#18与洪塘线#19间的导线', `describe`='洪塘线#18与洪塘线#19间的导线', ind=1168121172140646750, jnd=1168121172140646770 WHERE id=116530642237307074;
-64 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
+64 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =283
 
 65 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#1与洪塘线#2间导线', `describe`='洪塘线#1与洪塘线#2间导线', ind=1168121172140599570, jnd=1168121172140599560 WHERE id=116530642237304713;
-65 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =239
+65 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =249
 
 66 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#1与洪塘线#A间的导线', `describe`='洪塘线#1与洪塘线#A间的导线', ind=1168121172140599550, jnd=1168121172140599560 WHERE id=116530642237304714;
-66 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =230
+66 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 67 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#21与洪塘线#20间的导线', `describe`='洪塘线#21与洪塘线#20间的导线', ind=1168121172140646770, jnd=1168121172140646780 WHERE id=116530642237307075;
-67 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =301
+67 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =311
 
 68 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#22-洪塘线#23', `describe`='洪塘线#22-洪塘线#23', ind=1168121172140646790, jnd=1145603174002948571 WHERE id=116530642237307076;
-68 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
+68 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =248
 
 69 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#23付-洪塘线#24', `describe`='洪塘线#23付-洪塘线#24', ind=1168121172140646810, jnd=1168121172140646790 WHERE id=116530642237307077;
-69 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =252
+69 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
 
 70 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#27与洪塘线#26间的导线', `describe`='洪塘线#27与洪塘线#26间的导线', ind=1168121172140646830, jnd=1168121172140646840 WHERE id=116530642237307078;
-70 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
+70 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =315
 
 71 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#28与洪塘线#29间的导线', `describe`='洪塘线#28与洪塘线#29间的导线', ind=1168121172140646850, jnd=1168121172140646830 WHERE id=116530642237307079;
-71 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =279
+71 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =253
 
 72 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#2与洪塘线#3间导线', `describe`='洪塘线#2与洪塘线#3间导线', ind=1168121172140599570, jnd=1168121172140599580 WHERE id=116530642237304715;
-72 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
+72 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
 
 73 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#32与洪塘线#31间的导线', `describe`='洪塘线#32与洪塘线#31间的导线', ind=1168121172140646870, jnd=1168121172140646850 WHERE id=116530642237307080;
-73 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =223
+73 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 74 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#33与城东中学#1间的导线', `describe`='洪塘线#33与城东中学#1间的导线', ind=1168121172140646890, jnd=1168121172140646900 WHERE id=116530642237307081;
-74 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =226
+74 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =275
 
 75 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#3与洪塘线#4间导线', `describe`='洪塘线#3与洪塘线#4间导线', ind=1168121172140599610, jnd=1168121172140599580 WHERE id=116530642237304716;
-75 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =231
+75 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 76 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#4与洪塘线#5间导线', `describe`='洪塘线#4与洪塘线#5间导线', ind=1168121172140599610, jnd=1168121172140599620 WHERE id=116530642237304717;
-76 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =299
+76 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 77 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#5与洪塘线#6间导线', `describe`='洪塘线#5与洪塘线#6间导线', ind=1168121172140646930, jnd=1168121172140599620 WHERE id=116530642237307082;
-77 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =221
+77 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
 
 78 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#8与洪塘线#9间导线', `describe`='洪塘线#8与洪塘线#9间导线', ind=1168121172140646930, jnd=1168121172140646940 WHERE id=116530642237307083;
-78 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =279
+78 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =296
 
 79 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#9与洪塘线#10间导线', `describe`='洪塘线#9与洪塘线#10间导线', ind=1168121172140646950, jnd=1168121172140646940 WHERE id=116530642237307084;
-79 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =240
+79 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 80 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#A-洪塘线901', `describe`='洪塘线#A-洪塘线901', ind=1168121172140599710, jnd=1168121172140599720 WHERE id=116530642237304722;
-80 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =240
+80 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
 
 81 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.洪塘线#A-洪塘线901_a', `describe`='洪塘线#A-洪塘线901', ind=1168121172140599720, jnd=1168121172140599920 WHERE id=116530642237304721;
-81 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =205
+81 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
 
 82 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.石浔线#13东宅线#13-东宅线#14', `describe`='石浔线#13东宅线#13-东宅线#14', ind=1168121172140599730, jnd=1168121172140599740 WHERE id=116530642237304723;
-82 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =278
+82 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =279
 
 83 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.石浔线#20东宅线#20-东宅线#19', `describe`='石浔线#20东宅线#20-东宅线#19', ind=1168121172140599190, jnd=1168121172140599760 WHERE id=116530642237304724;
-83 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =232
+83 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =280
 
 84 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.石浔线#20东宅线#20-东宅线#21', `describe`='石浔线#20东宅线#20-东宅线#21', ind=1168121172140599210, jnd=1168121172140599760 WHERE id=116530642237304725;
-84 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =216
+84 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =241
 
 85 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线', `describe`='站外-连接线', ind=1168121172140646810, jnd=1168121172140646840 WHERE id=116530642237307085;
-85 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =225
+85 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =284
 
 86 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_a', `describe`='站外-连接线', ind=1168121172140599930, jnd=1168121172140599940 WHERE id=116530642237304733;
-86 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =225
+86 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =237
 
 87 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_b', `describe`='站外-连接线', ind=1168121172140599870, jnd=1145603174002944590 WHERE id=116530642237304730;
-87 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =237
+87 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
 
 88 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_c', `describe`='站外-连接线', ind=1145603174002948561, jnd=1168121172140647000 WHERE id=116530642237307086;
-88 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =280
+88 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =312
 
 89 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_d', `describe`='站外-连接线', ind=1168121172140600050, jnd=1145603174002944540 WHERE id=116530642237304739;
-89 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =237
+89 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =247
 
 90 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_e', `describe`='站外-连接线', ind=1168121172140599830, jnd=1145603174002944591 WHERE id=116530642237304728;
-90 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
+90 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =277
 
 91 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_f', `describe`='站外-连接线', ind=1168121172140599990, jnd=1168121172140600000 WHERE id=116530642237304736;
-91 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =209
+91 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
 
 92 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_g', `describe`='站外-连接线', ind=1168121172140599910, jnd=1168121172140599920 WHERE id=116530642237304732;
-92 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =225
+92 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =281
 
 93 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_h', `describe`='站外-连接线', ind=1168121172140599550, jnd=1168121172140600020 WHERE id=116530642237304737;
-93 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =253
+93 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 94 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_i', `describe`='站外-连接线', ind=1168121172140647010, jnd=1168121172140646870 WHERE id=116530642237307087;
-94 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
+94 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =292
 
 95 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_j', `describe`='站外-连接线', ind=1168121172140599810, jnd=1168121172140599820 WHERE id=116530642237304727;
-95 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =216
+95 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =306
 
 96 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_k', `describe`='站外-连接线', ind=1168121172140599290, jnd=1168121172140599980 WHERE id=116530642237304735;
-96 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =222
+96 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =239
 
 97 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.站外-连接线_l', `describe`='站外-连接线', ind=1168121172140600120, jnd=1168121172140600040 WHERE id=116530642237304738;
-97 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
+97 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =278
 
 98 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.龙泉Ⅱ回#1-塘边变电站942', `describe`='龙泉Ⅱ回#1-塘边变电站942', ind=1168121172140599870, jnd=1168121172140600080 WHERE id=116530642237304741;
-98 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
+98 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
 
 99 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.龙泉Ⅱ回#1-塘边变电站942_a', `describe`='龙泉Ⅱ回#1-塘边变电站942', ind=1168121172140600070, jnd=1168121172140600080 WHERE id=116530642237304740;
-99 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =234
+99 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =274
 
 100 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.龙泉Ⅱ回#2与龙泉Ⅱ回#3间的导线', `describe`='龙泉Ⅱ回#2与龙泉Ⅱ回#3间的导线', ind=1168121172140600110, jnd=1168121172140600120 WHERE id=116530642237304742;
-100 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =253
+100 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
 
 101 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.龙泉Ⅱ回902_站外-龙泉Ⅱ回#29', `describe`='龙泉Ⅱ回902_站外-龙泉Ⅱ回#29', ind=1168121172140599930, jnd=1168121172140600160 WHERE id=116530642237304743;
-101 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
+101 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =305
 
 102 : UPDATE aclinesegment SET  name='厦门.塘边变电站942.龙泉Ⅱ回902_站外-龙泉Ⅱ回#29_a', `describe`='龙泉Ⅱ回902_站外-龙泉Ⅱ回#29', ind=1168121172140600150, jnd=1168121172140600160 WHERE id=116530642237304744;
-102 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
+102 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =248
 
 103 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_13227529_T1', `describe`='-连接线-_T1', nd=1145603174002948570 WHERE id=116812117214064653;
-103 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
+103 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =279
 
 104 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_13227529_T2', `describe`='-连接线-_T2', nd=1168121172140646540 WHERE id=116812117214064654;
-104 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =228
+104 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =248
 
 105 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_10311534_T1', `describe`='10kV洪塘线#12杆故障指示器_T1', nd=1168121172140646550 WHERE id=116812117214064655;
-105 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =244
+105 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
 
 106 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_10311534_T2', `describe`='10kV洪塘线#12杆故障指示器_T2', nd=1168121172140646690 WHERE id=116812117214064656;
-106 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =242
+106 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =283
 
 107 : UPDATE aclineend SET  name='厦门.厦门市城东中学/10kV.36000000_10016950_T1', nd=1168121172140646570 WHERE id=116812117214064657;
-107 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =231
+107 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 108 : UPDATE aclineend SET  name='厦门.厦门市城东中学/10kV.36000000_10016950_T2', nd=1168121172140646590 WHERE id=116812117214064658;
-108 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =212
+108 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 109 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10436548_T1', nd=1145603174002944561 WHERE id=116812117214059903;
-109 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =214
+109 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =247
 
 110 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10436548_T2', nd=1154047423304190530 WHERE id=116812117214059904;
 110 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =275
 
 111 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106875_T1', nd=1154047423304190530 WHERE id=116812117214059905;
-111 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
+111 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =281
 
 112 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106875_T2', nd=1145603174002944570 WHERE id=116812117214059906;
-112 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =206
+112 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 113 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106819_T1', nd=1168121172140600150 WHERE id=116812117214059913;
-113 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =184
+113 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =273
 
 114 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106819_T2', nd=1145603174002944571 WHERE id=116812117214059914;
-114 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =219
+114 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 115 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.36000000_10106830_T1', nd=1168121172140599330 WHERE id=116812117214059907;
-115 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
+115 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =239
 
 116 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106830_T2', nd=1145603174002944550 WHERE id=116812117214059908;
-116 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =207
+116 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =277
 
 117 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106876_T1', nd=1145603174002944551 WHERE id=116812117214059909;
-117 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =224
+117 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =285
 
 118 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106876_T2', nd=1154047423304190530 WHERE id=116812117214059910;
-118 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
+118 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
 
 119 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106829_T1', nd=1168121172140599710 WHERE id=116812117214059911;
-119 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =236
+119 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 120 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.36000000_10106829_T2', nd=1145603174002944560 WHERE id=116812117214059912;
-120 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =211
+120 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =301
 
 121 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6673982_T1', `describe`='东宅线#12-石浔线#13东宅线#13_T1', nd=1168121172140599740 WHERE id=116812117214059915;
-121 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =210
+121 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =242
 
 122 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6673982_T2', `describe`='东宅线#12-石浔线#13东宅线#13_T2', nd=1168121172140599270 WHERE id=116812117214059916;
-122 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =216
+122 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 123 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626916_T1', `describe`='东宅线#17与东宅线#18间的导线_T1', nd=1168121172140599730 WHERE id=116812117214059917;
-123 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =173
+123 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 124 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626916_T2', `describe`='东宅线#17与东宅线#18间的导线_T2', nd=1168121172140599180 WHERE id=116812117214059918;
-124 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =177
+124 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 125 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6627229_T1', `describe`='东宅线#18-东宅线#19_T1', nd=1168121172140599190 WHERE id=116812117214059919;
-125 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =168
+125 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =269
 
 126 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6627229_T2', `describe`='东宅线#18-东宅线#19_T2', nd=1168121172140599180 WHERE id=116812117214059920;
-126 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =159
+126 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =252
 
 127 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626463_T1', `describe`='东宅线#21与东宅线#22间导线_T1', nd=1168121172140599210 WHERE id=116812117214059921;
-127 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =172
+127 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 128 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626463_T2', `describe`='东宅线#21与东宅线#22间导线_T2', nd=1145603174002944541 WHERE id=116812117214059922;
-128 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =213
+128 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =282
 
 129 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6637185_T1', `describe`='东宅线#3与东宅线#4间导线_T1', nd=1168121172140599230 WHERE id=116812117214059923;
-129 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =208
+129 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 130 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6637185_T2', `describe`='东宅线#3与东宅线#4间导线_T2', nd=1168121172140599260 WHERE id=116812117214059924;
-130 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =162
+130 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 131 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626787_T1', `describe`='东宅线#7与东宅线#8间导线_T1', nd=1168121172140599250 WHERE id=116812117214059925;
-131 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =169
+131 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =268
 
 132 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626787_T2', `describe`='东宅线#7与东宅线#8间导线_T2', nd=1168121172140599260 WHERE id=116812117214059926;
-132 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =175
+132 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
 
 133 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6635893_T1', `describe`='东宅线#9与东宅线#10间导线_T1', nd=1168121172140599270 WHERE id=116812117214059927;
-133 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =197
+133 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 134 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6635893_T2', `describe`='东宅线#9与东宅线#10间导线_T2', nd=1168121172140599250 WHERE id=116812117214059928;
-134 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =206
+134 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 135 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6666167_T1', `describe`='东宅线#A型杆-东宅线#1_T1', nd=1168121172140599290 WHERE id=116812117214059929;
-135 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =210
+135 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =255
 
 136 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6666167_T2', `describe`='东宅线#A型杆-东宅线#1_T2', nd=1168121172140599230 WHERE id=116812117214059930;
-136 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+136 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
 
 137 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_551116_T1', `describe`='东宅线#A型杆-东宅线903_T1', nd=1168121172140599340 WHERE id=116812117214059931;
-137 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =182
+137 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 138 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_551116_T2', `describe`='东宅线#A型杆-东宅线903_T2', nd=1168121172140599810 WHERE id=116812117214059932;
-138 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
+138 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 139 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6255866_T1', `describe`='东宅线#A型杆-东宅线903_T1', nd=1168121172140599330 WHERE id=116812117214059933;
-139 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =221
+139 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
 
 140 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6255866_T2', `describe`='东宅线#A型杆-东宅线903_T2', nd=1168121172140599340 WHERE id=116812117214059934;
-140 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =195
+140 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
 
 141 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6621486_T1', `describe`='东霞Ⅱ回#13-东霞Ⅱ回#14_T1', nd=1168121172140599350 WHERE id=116812117214059935;
-141 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =205
+141 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
 
 142 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6621486_T2', `describe`='东霞Ⅱ回#13-东霞Ⅱ回#14_T2', nd=1168121172140599360 WHERE id=116812117214059936;
-142 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =192
+142 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =197
 
 143 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623737_T1', `describe`='东霞Ⅱ回#2-东霞Ⅱ回#3_T1', nd=1168121172140599370 WHERE id=116812117214059937;
-143 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =206
+143 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =195
 
 144 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623737_T2', `describe`='东霞Ⅱ回#2-东霞Ⅱ回#3_T2', nd=1168121172140599380 WHERE id=116812117214059938;
-144 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =183
+144 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
 
 145 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6624521_T1', `describe`='东霞Ⅱ回#5-东霞Ⅱ回#6_T1', nd=1168121172140599370 WHERE id=116812117214059939;
-145 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =206
+145 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =227
 
 146 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6624521_T2', `describe`='东霞Ⅱ回#5-东霞Ⅱ回#6_T2', nd=1168121172140599400 WHERE id=116812117214059940;
-146 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =220
+146 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
 
 147 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6635297_T1', `describe`='东霞Ⅱ回#9-东霞Ⅱ回#10_T1', nd=1168121172140599350 WHERE id=116812117214059941;
-147 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+147 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
 
 148 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6635297_T2', `describe`='东霞Ⅱ回#9-东霞Ⅱ回#10_T2', nd=1168121172140599400 WHERE id=116812117214059942;
-148 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =227
+148 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =195
 
 149 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_553923_T1', `describe`='东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸_T1', nd=1168121172140599460 WHERE id=116812117214059943;
-149 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =175
+149 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =199
 
 150 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_553923_T2', `describe`='东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸_T2', nd=1168121172140599990 WHERE id=116812117214059944;
-150 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =194
+150 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
 
 151 : UPDATE aclineend SET  name='厦门.塘边变电站942.14000000_6264940_T1', `describe`='东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸_T1', nd=1168121172140599450 WHERE id=116812117214059945;
-151 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =212
+151 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =199
 
 152 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6264940_T2', `describe`='东霞Ⅱ回-东霞ⅠⅡ回#1东霞Ⅱ回#1刀闸刀闸_T2', nd=1168121172140599460 WHERE id=116812117214059946;
-152 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
+152 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 153 : UPDATE aclineend SET  name='厦门.厦门市城东中学/10kV.14000000_6259935_T1', `describe`='厦门市城东中学901-城东中学#8_T1', nd=1168121172140646590 WHERE id=116812117214064659;
-153 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =182
+153 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =243
 
 154 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6259935_T2', `describe`='厦门市城东中学901-城东中学#8_T2', nd=1168121172140646600 WHERE id=116812117214064660;
-154 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =201
+154 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 155 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_552615_T1', `describe`='厦门市城东中学901-城东中学#8_T1', nd=1168121172140646600 WHERE id=116812117214064661;
-155 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =179
+155 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 156 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_552615_T2', `describe`='厦门市城东中学901-城东中学#8_T2', nd=1168121172140647000 WHERE id=116812117214064662;
-156 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+156 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =228
 
 157 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9697874_T1', `describe`='未命名_T1', nd=1168121172140599470 WHERE id=116812117214059947;
-157 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =176
+157 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 158 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9697874_T2', `describe`='未命名_T2', nd=1168121172140599360 WHERE id=116812117214059948;
-158 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+158 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
 
 159 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9713396_T1', `describe`='未命名_T1', nd=1168121172140646630 WHERE id=116812117214064663;
-159 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+159 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 160 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9713396_T2', `describe`='未命名_T2', nd=1168121172140646890 WHERE id=116812117214064664;
-160 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =157
+160 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =250
 
 161 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9699244_T1', `describe`='未命名_T1', nd=1168121172140646780 WHERE id=116812117214064665;
-161 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =218
+161 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =298
 
 162 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9699244_T2', `describe`='未命名_T2', nd=1168121172140646660 WHERE id=116812117214064666;
-162 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =192
+162 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =253
 
 163 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9690475_T1', `describe`='未命名_T1', nd=1145603174002948560 WHERE id=116812117214064667;
-163 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =194
+163 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
 
 164 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9690475_T2', `describe`='未命名_T2', nd=1168121172140646680 WHERE id=116812117214064668;
-164 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =186
+164 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =247
 
 165 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9692651_T1', `describe`='未命名_T1', nd=1168121172140600110 WHERE id=116812117214059949;
-165 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+165 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =208
 
 166 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9692651_T2', `describe`='未命名_T2', nd=1168121172140599500 WHERE id=116812117214059950;
-166 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =199
+166 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
 
 167 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9699355_T1', `describe`='未命名_T1', nd=1168121172140599510 WHERE id=116812117214059951;
-167 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =197
+167 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 168 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9699355_T2', `describe`='未命名_T2', nd=1168121172140599380 WHERE id=116812117214059952;
-168 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =178
+168 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
 
 169 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6662269_T1', `describe`='洪塘线#12与洪塘线#13间导线_T1', nd=1168121172140646690 WHERE id=116812117214064669;
-169 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =173
+169 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 170 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6662269_T2', `describe`='洪塘线#12与洪塘线#13间导线_T2', nd=1168121172140646950 WHERE id=116812117214064670;
-170 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =187
+170 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
 
 171 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6654550_T1', `describe`='洪塘线#15与洪塘线#16间导线_T1', nd=1168121172140646730 WHERE id=116812117214064671;
-171 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =187
+171 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 172 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6654550_T2', `describe`='洪塘线#15与洪塘线#16间导线_T2', nd=1168121172140646720 WHERE id=116812117214064672;
-172 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =212
+172 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =272
 
 173 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6653512_T1', `describe`='洪塘线#18与洪塘线#17间的导线_T1', nd=1168121172140646730 WHERE id=116812117214064673;
-173 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =187
+173 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =269
 
 174 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6653512_T2', `describe`='洪塘线#18与洪塘线#17间的导线_T2', nd=1168121172140646750 WHERE id=116812117214064674;
-174 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =199
+174 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =278
 
 175 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6637433_T1', `describe`='洪塘线#18与洪塘线#19间的导线_T1', nd=1168121172140646750 WHERE id=116812117214064675;
-175 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =190
+175 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =238
 
 176 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6637433_T2', `describe`='洪塘线#18与洪塘线#19间的导线_T2', nd=1168121172140646770 WHERE id=116812117214064676;
-176 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
+176 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =255
 
 177 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6627868_T1', `describe`='洪塘线#1与洪塘线#2间导线_T1', nd=1168121172140599570 WHERE id=116812117214059953;
-177 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =204
+177 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 178 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6627868_T2', `describe`='洪塘线#1与洪塘线#2间导线_T2', nd=1168121172140599560 WHERE id=116812117214059954;
-178 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =215
+178 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =282
 
 179 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6616137_T1', `describe`='洪塘线#1与洪塘线#A间的导线_T1', nd=1168121172140599550 WHERE id=116812117214059955;
-179 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
+179 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
 
 180 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6616137_T2', `describe`='洪塘线#1与洪塘线#A间的导线_T2', nd=1168121172140599560 WHERE id=116812117214059956;
-180 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =200
+180 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 181 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6618562_T1', `describe`='洪塘线#21与洪塘线#20间的导线_T1', nd=1168121172140646770 WHERE id=116812117214064677;
-181 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+181 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 182 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6618562_T2', `describe`='洪塘线#21与洪塘线#20间的导线_T2', nd=1168121172140646780 WHERE id=116812117214064678;
-182 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =210
+182 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =306
 
 183 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6639841_T1', `describe`='洪塘线#22-洪塘线#23_T1', nd=1168121172140646790 WHERE id=116812117214064679;
-183 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =178
+183 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =233
 
 184 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6639841_T2', `describe`='洪塘线#22-洪塘线#23_T2', nd=1145603174002948571 WHERE id=116812117214064680;
-184 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+184 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
 
 185 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6647685_T1', `describe`='洪塘线#23付-洪塘线#24_T1', nd=1168121172140646810 WHERE id=116812117214064681;
-185 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =163
+185 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =316
 
 186 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6647685_T2', `describe`='洪塘线#23付-洪塘线#24_T2', nd=1168121172140646790 WHERE id=116812117214064682;
-186 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
+186 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =229
 
 187 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6620423_T1', `describe`='洪塘线#27与洪塘线#26间的导线_T1', nd=1168121172140646830 WHERE id=116812117214064683;
-187 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =228
+187 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 188 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6620423_T2', `describe`='洪塘线#27与洪塘线#26间的导线_T2', nd=1168121172140646840 WHERE id=116812117214064684;
-188 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =189
+188 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 189 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623747_T1', `describe`='洪塘线#28与洪塘线#29间的导线_T1', nd=1168121172140646850 WHERE id=116812117214064685;
-189 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =215
+189 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =276
 
 190 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623747_T2', `describe`='洪塘线#28与洪塘线#29间的导线_T2', nd=1168121172140646830 WHERE id=116812117214064686;
-190 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =169
+190 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 191 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623745_T1', `describe`='洪塘线#2与洪塘线#3间导线_T1', nd=1168121172140599570 WHERE id=116812117214059957;
-191 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =188
+191 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
 
 192 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623745_T2', `describe`='洪塘线#2与洪塘线#3间导线_T2', nd=1168121172140599580 WHERE id=116812117214059958;
-192 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =213
+192 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =265
 
 193 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6631229_T1', `describe`='洪塘线#32与洪塘线#31间的导线_T1', nd=1168121172140646870 WHERE id=116812117214064687;
-193 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =174
+193 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
 
 194 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6631229_T2', `describe`='洪塘线#32与洪塘线#31间的导线_T2', nd=1168121172140646850 WHERE id=116812117214064688;
-194 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =188
+194 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =289
 
 195 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6630908_T1', `describe`='洪塘线#33与城东中学#1间的导线_T1', nd=1168121172140646890 WHERE id=116812117214064689;
-195 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =167
+195 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 196 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6630908_T2', `describe`='洪塘线#33与城东中学#1间的导线_T2', nd=1168121172140646900 WHERE id=116812117214064690;
-196 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =173
+196 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =270
 
 197 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6661721_T1', `describe`='洪塘线#3与洪塘线#4间导线_T1', nd=1168121172140599610 WHERE id=116812117214059959;
-197 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =170
+197 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =231
 
 198 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6661721_T2', `describe`='洪塘线#3与洪塘线#4间导线_T2', nd=1168121172140599580 WHERE id=116812117214059960;
-198 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =172
+198 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =269
 
 199 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6631680_T1', `describe`='洪塘线#4与洪塘线#5间导线_T1', nd=1168121172140599610 WHERE id=116812117214059961;
-199 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =196
+199 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
 
 200 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6631680_T2', `describe`='洪塘线#4与洪塘线#5间导线_T2', nd=1168121172140599620 WHERE id=116812117214059962;
-200 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =229
+200 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
 
 201 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6658664_T1', `describe`='洪塘线#5与洪塘线#6间导线_T1', nd=1168121172140646930 WHERE id=116812117214064691;
-201 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+201 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
 
 202 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6658664_T2', `describe`='洪塘线#5与洪塘线#6间导线_T2', nd=1168121172140599620 WHERE id=116812117214064692;
-202 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =229
+202 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =255
 
 203 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623746_T1', `describe`='洪塘线#8与洪塘线#9间导线_T1', nd=1168121172140646930 WHERE id=116812117214064693;
-203 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =172
+203 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
 
 204 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6623746_T2', `describe`='洪塘线#8与洪塘线#9间导线_T2', nd=1168121172140646940 WHERE id=116812117214064694;
-204 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =195
+204 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 205 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6649096_T1', `describe`='洪塘线#9与洪塘线#10间导线_T1', nd=1168121172140646950 WHERE id=116812117214064695;
-205 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =200
+205 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 206 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6649096_T2', `describe`='洪塘线#9与洪塘线#10间导线_T2', nd=1168121172140646940 WHERE id=116812117214064696;
-206 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+206 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 207 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.14000000_6226561_T1', `describe`='洪塘线#A-洪塘线901_T1', nd=1168121172140599710 WHERE id=116812117214059971;
-207 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =225
+207 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 208 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6226561_T2', `describe`='洪塘线#A-洪塘线901_T2', nd=1168121172140599720 WHERE id=116812117214059972;
-208 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =170
+208 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =282
 
 209 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_544108_T1', `describe`='洪塘线#A-洪塘线901_T1', nd=1168121172140599720 WHERE id=116812117214059969;
-209 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =166
+209 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 210 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_544108_T2', `describe`='洪塘线#A-洪塘线901_T2', nd=1168121172140599920 WHERE id=116812117214059970;
-210 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =191
+210 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 211 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626915_T1', `describe`='石浔线#13东宅线#13-东宅线#14_T1', nd=1168121172140599730 WHERE id=116812117214059973;
-211 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =199
+211 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =235
 
 212 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6626915_T2', `describe`='石浔线#13东宅线#13-东宅线#14_T2', nd=1168121172140599740 WHERE id=116812117214059974;
-212 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =231
+212 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =260
 
 213 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6628206_T1', `describe`='石浔线#20东宅线#20-东宅线#19_T1', nd=1168121172140599190 WHERE id=116812117214059975;
-213 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =204
+213 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 214 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6628206_T2', `describe`='石浔线#20东宅线#20-东宅线#19_T2', nd=1168121172140599760 WHERE id=116812117214059976;
-214 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =279
+214 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
 
 215 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6665337_T1', `describe`='石浔线#20东宅线#20-东宅线#21_T1', nd=1168121172140599210 WHERE id=116812117214059977;
-215 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =248
+215 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 216 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6665337_T2', `describe`='石浔线#20东宅线#20-东宅线#21_T2', nd=1168121172140599760 WHERE id=116812117214059978;
-216 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+216 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 217 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_11705476_T1', `describe`='站外-连接线_T1', nd=1168121172140646810 WHERE id=116812117214064697;
-217 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+217 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 218 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_11705476_T2', `describe`='站外-连接线_T2', nd=1168121172140646840 WHERE id=116812117214064698;
-218 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =221
+218 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 219 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9715847_T1', `describe`='站外-连接线_T1', nd=1168121172140599930 WHERE id=116812117214059993;
-219 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =177
+219 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =240
 
 220 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9715847_T2', `describe`='站外-连接线_T2', nd=1168121172140599940 WHERE id=116812117214059994;
-220 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =202
+220 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =256
 
 221 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9685406_T1', `describe`='站外-连接线_T1', nd=1168121172140599870 WHERE id=116812117214059987;
-221 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =228
+221 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 222 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9685406_T2', `describe`='站外-连接线_T2', nd=1145603174002944590 WHERE id=116812117214059988;
-222 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =270
+222 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
 
 223 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9710745_T1', `describe`='站外-连接线_T1', nd=1145603174002948561 WHERE id=116812117214064699;
-223 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =169
+223 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =263
 
 224 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9710745_T2', `describe`='站外-连接线_T2', nd=1168121172140647000 WHERE id=116812117214064700;
-224 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =216
+224 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 225 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9695716_T1', `describe`='站外-连接线_T1', nd=1168121172140600050 WHERE id=116812117214060005;
-225 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =228
+225 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
 
 226 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9695716_T2', `describe`='站外-连接线_T2', nd=1145603174002944540 WHERE id=116812117214060006;
-226 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =212
+226 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 227 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9686246_T1', `describe`='站外-连接线_T1', nd=1168121172140599830 WHERE id=116812117214059983;
-227 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =224
+227 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =278
 
 228 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9686246_T2', `describe`='站外-连接线_T2', nd=1145603174002944591 WHERE id=116812117214059984;
-228 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =220
+228 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
 
 229 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9693336_T1', `describe`='站外-连接线_T1', nd=1168121172140599990 WHERE id=116812117214059999;
-229 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =203
+229 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =261
 
 230 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9693336_T2', `describe`='站外-连接线_T2', nd=1168121172140600000 WHERE id=116812117214060000;
-230 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =184
+230 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =258
 
 231 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9720235_T1', `describe`='站外-连接线_T1', nd=1168121172140599910 WHERE id=116812117214059991;
-231 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =239
+231 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 232 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9720235_T2', `describe`='站外-连接线_T2', nd=1168121172140599920 WHERE id=116812117214059992;
-232 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =210
+232 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 233 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9709015_T1', `describe`='站外-连接线_T1', nd=1168121172140599550 WHERE id=116812117214060001;
-233 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =197
+233 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 234 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9709015_T2', `describe`='站外-连接线_T2', nd=1168121172140600020 WHERE id=116812117214060002;
-234 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =223
+234 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 235 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9695882_T1', `describe`='站外-连接线_T1', nd=1168121172140647010 WHERE id=116812117214064701;
-235 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+235 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =260
 
 236 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9695882_T2', `describe`='站外-连接线_T2', nd=1168121172140646870 WHERE id=116812117214064702;
-236 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =220
+236 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 237 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9706992_T1', `describe`='站外-连接线_T1', nd=1168121172140599810 WHERE id=116812117214059981;
-237 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =198
+237 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =264
 
 238 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9706992_T2', `describe`='站外-连接线_T2', nd=1168121172140599820 WHERE id=116812117214059982;
-238 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =207
+238 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =266
 
 239 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9701245_T1', `describe`='站外-连接线_T1', nd=1168121172140599290 WHERE id=116812117214059997;
-239 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =199
+239 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 240 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9701245_T2', `describe`='站外-连接线_T2', nd=1168121172140599980 WHERE id=116812117214059998;
-240 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =210
+240 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =260
 
 241 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9684859_T1', `describe`='站外-连接线_T1', nd=1168121172140600120 WHERE id=116812117214060003;
-241 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =194
+241 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =271
 
 242 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.13000000_9684859_T2', `describe`='站外-连接线_T2', nd=1168121172140600040 WHERE id=116812117214060004;
-242 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =207
+242 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
 
 243 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_1104450_T1', `describe`='龙泉Ⅱ回#1-塘边变电站942_T1', nd=1168121172140599870 WHERE id=116812117214060009;
-243 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =201
+243 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =262
 
 244 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_1104450_T2', `describe`='龙泉Ⅱ回#1-塘边变电站942_T2', nd=1168121172140600080 WHERE id=116812117214060010;
-244 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =179
+244 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =229
 
 245 : UPDATE aclineend SET  name='厦门.塘边变电站942.14000000_6267032_T1', `describe`='龙泉Ⅱ回#1-塘边变电站942_T1', nd=1168121172140600070 WHERE id=116812117214060007;
-245 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =211
+245 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =278
 
 246 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6267032_T2', `describe`='龙泉Ⅱ回#1-塘边变电站942_T2', nd=1168121172140600080 WHERE id=116812117214060008;
-246 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =186
+246 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =254
 
 247 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6625979_T1', `describe`='龙泉Ⅱ回#2与龙泉Ⅱ回#3间的导线_T1', nd=1168121172140600110 WHERE id=116812117214060011;
-247 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =238
+247 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =257
 
 248 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.10100000_6625979_T2', `describe`='龙泉Ⅱ回#2与龙泉Ⅱ回#3间的导线_T2', nd=1168121172140600120 WHERE id=116812117214060012;
-248 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =205
+248 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =260
 
 249 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_555941_T1', `describe`='龙泉Ⅱ回902_站外-龙泉Ⅱ回#29_T1', nd=1168121172140599930 WHERE id=116812117214060013;
-249 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =180
+249 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =259
 
 250 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.20100000_555941_T2', `describe`='龙泉Ⅱ回902_站外-龙泉Ⅱ回#29_T2', nd=1168121172140600160 WHERE id=116812117214060014;
-250 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =212
+250 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =267
 
 251 : UPDATE aclineend SET  name='厦门.洪塘仓库#2环网柜/10kV.14000000_6265893_T1', `describe`='龙泉Ⅱ回902_站外-龙泉Ⅱ回#29_T1', nd=1168121172140600150 WHERE id=116812117214060015;
-251 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =207
+251 : ## insert  into dmdb: tot_sec_lf=0.0003,total_lf =260
 
 252 : UPDATE aclineend SET  name='厦门.塘边变电站942/10kV.14000000_6265893_T2', `describe`='龙泉Ⅱ回902_站外-龙泉Ⅱ回#29_T2', nd=1168121172140600160 WHERE id=116812117214060016;
-252 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =205
+252 : ## insert  into dmdb: tot_sec_lf=0.0002,total_lf =243
 
-########## insert /home/ies/data/cimdata/cime/111_3540200_城东中学-联络图20180615154409_eq_modify_isql.sql into dmdb: tot_sec_lf=0.4013,total_lf =401343
+########## insert /home/ies/data/cimdata/cime/111_3540200_城东中学-联络图20180615154409_eq_modify_isql.sql into dmdb: tot_sec_lf=0.1589,total_lf =158948

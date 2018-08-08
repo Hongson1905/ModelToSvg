@@ -144,6 +144,7 @@ public class MakeConn {
                 if(line.indexOf("/etc/iesprofile: line 4: ulimit: POSIX message queues: cannot modify limit: ")<0){
                     buffer.append(line+"\n");
                     System.out.println(line);
+                    if(line.indexOf("have finished Graph Change")>=0) return buffer.toString();
                 }
 
             }

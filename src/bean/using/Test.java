@@ -1,14 +1,13 @@
 package bean.using;
 
-import bean.function.MakeConn;
+import java.io.File;
 
 class Test {
 
 
     public void fd(){
-        MakeConn makeConn = new MakeConn("10.35.10.105","ies","ies1234");
-        makeConn.execute("killall model_mul_handle");
-
+        File tmpFile = new File(System.getProperty("user.dir")+"/src/data/tmp/000_3540200_澳溪中学-联络图20180615154326_eq_imp.log");
+        System.out.println(tmpFile.delete());
     }
 
     public static void main(String[] args) {

@@ -47,7 +47,6 @@ public class PrimaryUI {
         panel.removeAll();
         logo001 = new JLabel();
         tmpIcon = new ImageIcon(System.getProperty("user.dir")+ File.separator+"src/data/001.png");
-        tmpIcon.setImage(tmpIcon.getImage());
         tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(200, 120, Image.SCALE_SMOOTH));
         logo001.setIcon(tmpIcon);
         panel.add(logo001, GridPref.getGridPref(0,0,1,3,0.0,0.0,10,1,-100,-70,0,50,0,0));
@@ -173,7 +172,7 @@ public class PrimaryUI {
                     @Override
                     public void run() {
                         try {
-                            tmpThead.sleep(200);
+                            tmpThead.sleep(300);
                         } catch (InterruptedException e1) {
                             e1.printStackTrace();
                         }
@@ -217,7 +216,7 @@ public class PrimaryUI {
                 @Override
                 public void run() {
                     try {
-                        tmpThead.sleep(100);
+                        tmpThead.sleep(200);
                     } catch (InterruptedException e1) {
                         e1.printStackTrace();
                     }

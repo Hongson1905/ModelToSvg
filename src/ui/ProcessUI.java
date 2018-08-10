@@ -58,7 +58,7 @@ public class ProcessUI {
         subTitleField.setOpaque(false);
 
         sLabel = new JLabel();
-        setLabelIcon(sLabel,"src/data/stop03.png",40,40);
+        setLabelIcon(sLabel,"src/data/stop.png",40,40);
         sLabel.setToolTipText("stop");
         sLabel.addMouseListener(processUImouseListener);
 
@@ -92,8 +92,22 @@ public class ProcessUI {
     //图模转换（全步骤）
     public void allMerge(){
         ModelMerge.depand = true;
-        initUI("压缩文件图模转换","src/data/001.png");
-        modelMerge.startMerge(subTitleField,processArea);
+        if(modelMerge.getDirFile(PropertyGet.prop.getProperty("zipSvg")).size()<1){
+            JOptionPane.showMessageDialog(FMain.mainFrame,
+                    "图形压缩文件不存在!\n请检查："+PropertyGet.prop.getProperty("zipSvg")+"下的文件！", "系统信息", JOptionPane.ERROR_MESSAGE);
+            System.out.println("---未检测到图形压缩文件---");
+            ModelMerge.depand = false;
+            return;
+        }else if(modelMerge.getDirFile(PropertyGet.prop.getProperty("zipModel")).size()<1){
+            JOptionPane.showMessageDialog(FMain.mainFrame,
+                    "模型压缩文件不存在!\n请检查："+PropertyGet.prop.getProperty("zipModel")+"下的文件！", "系统信息", JOptionPane.ERROR_MESSAGE);
+            System.out.println("---未检测到模型压缩文件---");
+            ModelMerge.depand = false;
+            return;
+        } else {
+            initUI("压缩文件图模转换","src/data/001.png");
+            modelMerge.startMerge(subTitleField,processArea);
+        }
     }
     //模型导入
     public void inputMerge(){
@@ -113,7 +127,7 @@ public class ProcessUI {
         } else {
             panel.removeAll();
             panel.repaint();
-            initUI("模型导入","src/data/001.png");
+            initUI("模型导入","src/data/input.png");
             modelMerge.startInput(subTitleField,processArea);
         }
 
@@ -123,7 +137,7 @@ public class ProcessUI {
         panel.removeAll();
         panel.repaint();
         ModelMerge.depand = true;
-        initUI("模型拼接","src/data/001.png");
+        initUI("模型拼接","src/data/merge.png");
         subTitleField.setText("模型拼接");
         modelMerge.StartJustMerge(subTitleField,processArea);
 
@@ -133,7 +147,7 @@ public class ProcessUI {
     public void convertMerge(){
         panel.removeAll();
         panel.repaint();
-        initUI("图模转换","src/data/001.png");
+        initUI("图模转换","src/data/convert.png");
         modelMerge.StartConvertMerge(subTitleField,processArea);
 
     }
@@ -141,7 +155,12 @@ public class ProcessUI {
 
     //为label添加图标
     public void setLabelIcon(JLabel label,String url){
-        setLabelIcon(label,url,120,70);
+        if(url.indexOf("001")>=0){
+            setLabelIcon(label,url,120,70);
+        }else {
+            setLabelIcon(label,url,90,90);
+        }
+
     }
     public void setLabelIcon(JLabel label,String url,int w,int h){
         tmpIcon = new ImageIcon(System.getProperty("user.dir")+ File.separator+url);
@@ -157,12 +176,25 @@ public class ProcessUI {
             tmpLabel = (JLabel) e.getSource();
             if("stop".equals(tmpLabel.getToolTipText())){
                 stopNowProc();
+                setLabelIcon(sLabel,"src/data/start.png",40,40);
+                sLabel.setToolTipText("start");
                 processArea.append("=== stopped ===");
                 processArea.append("\n");
                 processArea.repaint();
+
             }else if("back".equals(tmpLabel.getToolTipText())){
                 primaryUI = new PrimaryUI(panel);
                 stopNowProc();
+            }else if("start".equals(tmpLabel.getToolTipText())){
+                setLabelIcon(sLabel,"src/data/stop.png",40,40);
+                sLabel.setToolTipText("stop");
+                if("模型导入".equals(subTitleField.getText())){
+                    modelMerge.startInput(subTitleField,processArea);
+                }else if("模型拼接".equals(subTitleField.getText())){
+                    modelMerge.StartJustMerge(subTitleField,processArea);
+                }else if("图模转换".equals(subTitleField.getText())){
+                    modelMerge.StartConvertMerge(subTitleField,processArea);
+                }
             }
 
 
@@ -202,7 +234,7 @@ public class ProcessUI {
     private void stopNowProc(){
         if("图模转换".equals(titleField.getText())){
 
-        }else if("模型导入".equals(titleField.getText())){
+        }else if("模型导入".equals(subTitleField.getText())){
             try {
                 makeConn.getSession().execCommand("killall "+PropertyGet.prop.getProperty("svgModelZip"));
                 makeConn.getSession().close();
@@ -211,7 +243,7 @@ public class ProcessUI {
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-        }else if("模型拼接".equals(titleField.getText())){
+        }else if("模型拼接".equals(subTitleField.getText())){
             try {
                 makeConn.getSession().execCommand("killall "+PropertyGet.prop.getProperty("model_merge_proc"));
                 makeConn.getSession().close();
@@ -219,7 +251,7 @@ public class ProcessUI {
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-        }else if("图模转换".equals(titleField.getText())){
+        }else if("图模转换".equals(subTitleField.getText())){
             try {
                 makeConn.getSession().execCommand("killall "+PropertyGet.prop.getProperty("model_convert_proc"));
                 makeConn.getSession().close();

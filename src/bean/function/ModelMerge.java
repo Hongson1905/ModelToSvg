@@ -231,22 +231,39 @@ public class ModelMerge {
                 subTitle.setText("图模转换");
                 processArea.append("=== 图模转换 ===");
                 processArea.append("\n");
+                changTxt(processArea);
+                if(getDirFile(PropertyGet.prop.getProperty("beforeUrl")).size()<=0){
+                    JOptionPane.showMessageDialog(FMain.mainFrame,
+                            "图形文件不存在!\n请检查："+PropertyGet.prop.getProperty("beforeUrl")+"下的文件！", "系统信息", JOptionPane.ERROR_MESSAGE);
+                    System.out.println("--- 未检测到图形文件 ---");
+                    System.out.println(PropertyGet.prop.getProperty("beforeUrl")+":下没有图形文件！");
+                    return;
+                }
+                processArea.append("清空data/cimdata/graph/svg/3540200...");
+                processArea.append("\n");
+                if(cleanDir(PropertyGet.prop.getProperty("resultUrl"))){
+                    System.out.println(PropertyGet.prop.getProperty("resultUrl")+":清空完成");
+                    processArea.append("data/cimdata/graph/svg/3540200清空完成.");
+                    processArea.append("\n");
+                }else {
+                    System.out.println(PropertyGet.prop.getProperty("resultUrl")+":清空失败");
+                    processArea.append("data/cimdata/graph/svg/3540200清空失败.");
+                    processArea.append("\n");
+                    ModelMerge.depand = false;
+                }
                 cmd = "./"+PropertyGet.prop.getProperty("modelConvert")+PropertyGet.prop.getProperty("model_convert_proc");
                 processArea.append(cmd+"\n");
                 System.out.println(cmd);
                 backResult = makeConn.execute(cmd);
-                processArea.append(backResult+"\n");
-                System.out.println(backResult);
                 System.out.println(makeConn.exitCode);
                 System.out.println(getDirFile(PropertyGet.prop.getProperty("resultUrl")).size());
-                if(getDirFile(PropertyGet.prop.getProperty("resultUrl")).size()<=0){
-                    JOptionPane.showMessageDialog(FMain.mainFrame,
-                            "图形文件不存在!\n请检查："+PropertyGet.prop.getProperty("resultUrl")+"下的文件！", "系统信息", JOptionPane.ERROR_MESSAGE);
-                    System.out.println("--- 未检测到图形文件 ---");
-                    System.out.println(PropertyGet.prop.getProperty("resultUrl")+":下没有图形文件！");
-                    return;
-                }
                 //查看转换结果
+                try {
+                    processArea.append("读取转图结果中..."+"\n");
+                    Thread.sleep(7000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 tmpVector = new Vector<String>();
                 tmpVector = getDirFile(PropertyGet.prop.getProperty("resultUrl"));
                 rigthGraph = new Vector<String>();
@@ -268,8 +285,16 @@ public class ModelMerge {
                     processArea.append(a+"\n");
                     System.out.println(a);
                 }
-                if(cleanDir(PropertyGet.prop.getProperty("resultUrl"))){
-                    processArea.append(PropertyGet.prop.getProperty("resultUrl")+" 清空完成 ！"+"\n");
+                //清空转前图
+                if(cleanDir(PropertyGet.prop.getProperty("beforeUrl"))){
+                    System.out.println(PropertyGet.prop.getProperty("beforeUrl")+":清空完成");
+                    processArea.append(PropertyGet.prop.getProperty("beforeUrl")+"清空完成.");
+                    processArea.append("\n");
+                }else {
+                    System.out.println(PropertyGet.prop.getProperty("beforeUrl")+":清空失败");
+                    processArea.append(PropertyGet.prop.getProperty("beforeUrl")+"清空失败.");
+                    processArea.append("\n");
+                    ModelMerge.depand = false;
                 }
                 processArea.append("=== 图模转换完成 ==="+"\n");
                 System.out.println("图模转换返回值："+makeConn.exitCode);
@@ -279,6 +304,31 @@ public class ModelMerge {
         });
         tmpThread.start();
 
+    }
+    //Exchange文件读写：判断转之前的图名是否在该文件中，不在，按照指定的格式添加
+    public void changTxt(JTextArea processArea){
+        boolean hasChanged = false;
+        RemoteChange remoteChange = new RemoteChange(PropertyGet.prop.getProperty("hostName"),PropertyGet.prop.getProperty("userName"),PropertyGet.prop.getProperty("password"));
+        remoteChange.getFile(PropertyGet.prop.getProperty("changeUrl"),PropertyGet.prop.getProperty("changeName"),System.getProperty("user.dir")+"/src/data/tmp");
+        //转前图名
+        tmpVector = getDirFile(PropertyGet.prop.getProperty("beforeUrl"));
+        //写入没有的名字
+        for(String a:tmpVector){
+            a= a.substring(a.indexOf("[")+1,a.indexOf("-"));
+            //找不到指定名称：
+            if(!remoteChange.readLocalFile(a)){
+                remoteChange.writeFile(a+"\t["+a+"-联络图]\t"+a+"_供电路径图");
+                System.out.println("change文件新增："+a);
+                processArea.append("Exchange.txt文件新增图："+a+"\n");
+                hasChanged = true;
+            }
+        }
+        //上传exchange文件,替换原有
+        if(hasChanged){
+            remoteChange.replaceFile(System.getProperty("user.dir")+"/src/data/tmp","Exchange.txt",PropertyGet.prop.getProperty("changeUrl"));
+        }
+
+        //删除本地exchange文件
     }
     //清空指定路径下的文件夹
     public boolean cleanDir(String dir){

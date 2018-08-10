@@ -106,7 +106,7 @@ public class ProcessUI {
             return;
         } else {
             initUI("压缩文件图模转换","src/data/001.png");
-            modelMerge.startMerge(subTitleField,processArea);
+            modelMerge.startMerge(titleLabel,subTitleField,processArea);
         }
     }
     //模型导入
@@ -128,7 +128,7 @@ public class ProcessUI {
             panel.removeAll();
             panel.repaint();
             initUI("模型导入","src/data/input.png");
-            modelMerge.startInput(subTitleField,processArea);
+            modelMerge.startInput(titleLabel,subTitleField,processArea);
         }
 
     }
@@ -139,7 +139,7 @@ public class ProcessUI {
         ModelMerge.depand = true;
         initUI("模型拼接","src/data/merge.png");
         subTitleField.setText("模型拼接");
-        modelMerge.StartJustMerge(subTitleField,processArea);
+        modelMerge.StartJustMerge(titleLabel,subTitleField,processArea);
 
 
     }
@@ -148,7 +148,7 @@ public class ProcessUI {
         panel.removeAll();
         panel.repaint();
         initUI("图模转换","src/data/convert.png");
-        modelMerge.StartConvertMerge(subTitleField,processArea);
+        modelMerge.StartConvertMerge(titleLabel,subTitleField,processArea);
 
     }
 
@@ -164,7 +164,7 @@ public class ProcessUI {
     }
     public void setLabelIcon(JLabel label,String url,int w,int h){
         tmpIcon = new ImageIcon(System.getProperty("user.dir")+ File.separator+url);
-        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, Image.SCALE_SMOOTH));
+        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, Image.SCALE_DEFAULT));
         label.setIcon(tmpIcon);
     }
 
@@ -189,11 +189,11 @@ public class ProcessUI {
                 setLabelIcon(sLabel,"src/data/stop.png",40,40);
                 sLabel.setToolTipText("stop");
                 if("模型导入".equals(subTitleField.getText())){
-                    modelMerge.startInput(subTitleField,processArea);
+                    modelMerge.startInput(titleLabel,subTitleField,processArea);
                 }else if("模型拼接".equals(subTitleField.getText())){
-                    modelMerge.StartJustMerge(subTitleField,processArea);
+                    modelMerge.StartJustMerge(titleLabel,subTitleField,processArea);
                 }else if("图模转换".equals(subTitleField.getText())){
-                    modelMerge.StartConvertMerge(subTitleField,processArea);
+                    modelMerge.StartConvertMerge(titleLabel,subTitleField,processArea);
                 }
             }
 

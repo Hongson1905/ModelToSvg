@@ -31,12 +31,15 @@ public class ModelMerge {
     public ModelMerge(){
     }
     //压缩文件转图
-    public void startMerge(final JTextField textField, final JTextArea textArea){
+    public void startMerge(final JLabel titleLabel,final JTextField textField, final JTextArea textArea){
         new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("=== 压缩文件转图-start ===");
-                if(depand&&!tmpThread.isAlive()) startInput(textField,textArea);
+                setLabelIcon(titleLabel,"src/data/001.gif");
+                titleLabel.repaint();
+                titleLabel.validate();
+                if(depand&&!tmpThread.isAlive()) startInput(titleLabel,textField,textArea);
                 while (tmpThread.isAlive()) {
                     try {
                         Thread.sleep(1000);
@@ -44,7 +47,7 @@ public class ModelMerge {
                         e.printStackTrace();
                     }
                 }
-                if(depand&&!tmpThread.isAlive()) StartJustMerge(textField,textArea);
+                if(depand&&!tmpThread.isAlive()) StartJustMerge(titleLabel,textField,textArea);
                 while (tmpThread.isAlive()) {
                     try {
                         Thread.sleep(1000);
@@ -52,7 +55,10 @@ public class ModelMerge {
                         e.printStackTrace();
                     }
                 }
-                if(depand&&!tmpThread.isAlive()) StartConvertMerge(textField,textArea);
+                if(depand&&!tmpThread.isAlive()) StartConvertMerge(titleLabel,textField,textArea);
+                setLabelIcon(titleLabel,"src/data/001.gif");
+                titleLabel.repaint();
+                titleLabel.validate();
                 System.out.println("=== 压缩文件转图-end ===");
             }
         }).start();
@@ -60,11 +66,14 @@ public class ModelMerge {
 
     }
     //模型导入：解压，入库
-    public void startInput(final JTextField textField, final JTextArea textArea){
+    public void startInput(final JLabel titleLabel,final JTextField textField, final JTextArea textArea){
         tmpThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("=== 模型导入-start ===");
+                setLabelIcon(titleLabel,"src/data/input.gif");
+                titleLabel.repaint();
+                titleLabel.validate();
                 depand = true;
                 textField.setText("压缩文件解压入库");
                 //清空放置解压文件的文件夹
@@ -178,7 +187,9 @@ public class ModelMerge {
                     textArea.append("\n");
                     textArea.repaint();
                 }
-
+                setLabelIcon(titleLabel,"src/data/input.png");
+                titleLabel.repaint();
+                titleLabel.validate();
                 System.out.println("=== 模型导入-end ===");
             }
         });
@@ -192,11 +203,14 @@ public class ModelMerge {
     }
 
     //模型拼接
-    public void StartJustMerge(final JTextField subTitle ,final JTextArea processArea){
+    public void StartJustMerge(final JLabel titleLabel,final JTextField subTitle ,final JTextArea processArea){
         tmpThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("=== 模型拼接-start ===");
+                setLabelIcon(titleLabel,"src/data/merge.gif");
+                titleLabel.repaint();
+                titleLabel.validate();
                 subTitle.setText("模型拼接");
                 cmd = "./"+PropertyGet.prop.getProperty("modelMerge")+PropertyGet.prop.getProperty("model_merge_proc");
                 System.out.println(cmd);
@@ -214,6 +228,9 @@ public class ModelMerge {
                     processArea.append("\n");
                     processArea.repaint();
                 }
+                setLabelIcon(titleLabel,"src/data/merge.png");
+                titleLabel.repaint();
+                titleLabel.validate();
                 System.out.println("=== 模型拼接-end ===");
             }
         });
@@ -221,13 +238,16 @@ public class ModelMerge {
     }
 
     //图模转换
-    public void StartConvertMerge(final JTextField subTitle,final JTextArea processArea){
+    public void StartConvertMerge(final JLabel titleLabel,final JTextField subTitle,final JTextArea processArea){
 
         tmpThread = new Thread(new Runnable() {
             @Override
             public void run() {
 
                 System.out.println("=== 图模转换-start ===");
+                setLabelIcon(titleLabel,"src/data/convert.gif");
+                titleLabel.repaint();
+                titleLabel.validate();
                 subTitle.setText("图模转换");
                 processArea.append("=== 图模转换 ===");
                 processArea.append("\n");
@@ -298,6 +318,9 @@ public class ModelMerge {
                 }
                 processArea.append("=== 图模转换完成 ==="+"\n");
                 System.out.println("图模转换返回值："+makeConn.exitCode);
+                setLabelIcon(titleLabel,"src/data/convert.png");
+                titleLabel.repaint();
+                titleLabel.validate();
                 System.out.println("=== 图模转换-end ===");
                 //System.out.println("清空："+PropertyGet.prop.getProperty("resultUrl")+":"+cleanDir(PropertyGet.prop.getProperty("resultUrl")));
             }
@@ -364,11 +387,15 @@ public class ModelMerge {
     //为label添加图标
     ImageIcon tmpIcon;
     public void setLabelIcon(JLabel label,String url){
-        setLabelIcon(label,url,120,70);
+        if(url.indexOf("001")>=0){
+            setLabelIcon(label,url,120,70);
+        }else {
+            setLabelIcon(label,url,90,90);
+        }
     }
     public void setLabelIcon(JLabel label,String url,int w,int h){
         tmpIcon = new ImageIcon(System.getProperty("user.dir")+ File.separator+url);
-        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, Image.SCALE_SMOOTH));
+        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, Image.SCALE_DEFAULT));
         label.setIcon(tmpIcon);
     }
 

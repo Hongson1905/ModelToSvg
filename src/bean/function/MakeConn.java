@@ -14,7 +14,7 @@ import java.io.*;
  * @since  V0.1
  */
 public class MakeConn {
-    private static String  DEFAULTCHART="GBK";
+    private static String  DEFAULTCHART="UTF-8";
     private Connection conn;
     public Session session;
     private String ip;
@@ -137,7 +137,7 @@ public class MakeConn {
         InputStream    stdout = new StreamGobbler(in);
         StringBuffer buffer = new StringBuffer();
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(stdout));
+            BufferedReader br = new BufferedReader(new InputStreamReader(stdout,charset));
             String line=null;
             while((line=br.readLine()) != null){
 

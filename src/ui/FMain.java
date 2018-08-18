@@ -13,7 +13,7 @@ public class FMain {
         propertyGet = new PropertyGet("src/data/ServerProperty.properties ");//加载配置文件
         mainFrame = new UnborderFrame();//加载窗口
         mainFrame.getPanel().setOpaque(true);
-        primaryUI = new PrimaryUI(mainFrame.getPanel());
+        PrimaryUI primaryUI = new PrimaryUI(mainFrame.getPanel());
 
     }
 

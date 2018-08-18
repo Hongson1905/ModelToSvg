@@ -73,6 +73,9 @@ public class UnborderFrame extends JFrame{
         closeLabel = new JLabel();closeLabel.setToolTipText("close");setLabelIcon(closeLabel,"src/data/close.png",new Color(224,242,164),20);
         minLabel = new JLabel();minLabel.setToolTipText("min");setLabelIcon(minLabel,"src/data/min.png",new Color(224,242,164),15);
         maxLabel = new JLabel();maxLabel.setToolTipText("max");setLabelIcon(maxLabel,"src/data/max.png",new Color(224,242,164),15);
+        closeLabel.setBorder(null);
+        minLabel.setBorder(null);
+        maxLabel.setBorder(null);
         closeLabel.addMouseListener(toolMouseListener);
         minLabel.addMouseListener(toolMouseListener);
         maxLabel.addMouseListener(toolMouseListener);

@@ -15,8 +15,7 @@ import java.util.Vector;
 public class ModelMerge {
     public static boolean depand = true;
     public static MakeConn makeConn = new MakeConn();//创建远程连接
-    private int backCode = -999;
-    private String backResult = "";
+    private String backResult ;
     private Thread tmpThread = new Thread();
     private String cmd;
     public Vector<String> rigthGraph;
@@ -56,7 +55,14 @@ public class ModelMerge {
                     }
                 }
                 if(depand&&!tmpThread.isAlive()) StartConvertMerge(titleLabel,textField,textArea);
-                setLabelIcon(titleLabel,"src/data/001.gif");
+                while (tmpThread.isAlive()) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                setLabelIcon(titleLabel,"src/data/001.png");
                 titleLabel.repaint();
                 titleLabel.validate();
                 System.out.println("=== 压缩文件转图-end ===");
@@ -75,8 +81,9 @@ public class ModelMerge {
                 titleLabel.repaint();
                 titleLabel.validate();
                 depand = true;
-                textField.setText("压缩文件解压入库");
+                textField.setText("模型导入");
                 //清空放置解压文件的文件夹
+                textArea.append("=== 模型导入-start ===\n");
                 textArea.append("清空data/cimdata/cime...");
                 textArea.append("\n");
                 if(cleanDir(PropertyGet.prop.getProperty("zipNow"))){
@@ -134,7 +141,6 @@ public class ModelMerge {
                     e.printStackTrace();
                 }
 //                判断哪些模型正在入库
-                System.out.println(getDirFile(PropertyGet.prop.getProperty("zipNow")).size());
                 boolean tmpDepand = true;
                 Vector<String> tmpInDB = new Vector<String>();
                 int emptyNum = 0;
@@ -188,6 +194,7 @@ public class ModelMerge {
                     textArea.repaint();
                 }
                 setLabelIcon(titleLabel,"src/data/input.png");
+                textArea.append("=== 模型导入-end ===\n");
                 titleLabel.repaint();
                 titleLabel.validate();
                 System.out.println("=== 模型导入-end ===");
@@ -218,8 +225,7 @@ public class ModelMerge {
                 processArea.append("\n");
                 processArea.append(cmd);
                 processArea.append("\n");
-                processArea.append("模型拼接中...");
-                processArea.append("\n");
+                processArea.append("模型拼接中...\n");
                 session = makeConn.getSession();
                 backResult = makeConn.executeSuccess(cmd);
                 System.out.println("模型拼接返回值："+makeConn.exitCode);
@@ -257,6 +263,10 @@ public class ModelMerge {
                             "图形文件不存在!\n请检查："+PropertyGet.prop.getProperty("beforeUrl")+"下的文件！", "系统信息", JOptionPane.ERROR_MESSAGE);
                     System.out.println("--- 未检测到图形文件 ---");
                     System.out.println(PropertyGet.prop.getProperty("beforeUrl")+":下没有图形文件！");
+                    processArea.append("--- 未检测到图形文件 ---\n");
+                    setLabelIcon(titleLabel,"src/data/convert.png");
+                    titleLabel.repaint();
+                    titleLabel.validate();
                     return;
                 }
                 processArea.append("清空data/cimdata/graph/svg/3540200...");
@@ -341,8 +351,8 @@ public class ModelMerge {
             //找不到指定名称：
             if(!remoteChange.readLocalFile(a)){
                 remoteChange.writeFile(a+"\t["+a+"-联络图]\t"+a+"_供电路径图");
-                System.out.println("change文件新增："+a);
-                processArea.append("Exchange.txt文件新增图："+a+"\n");
+                System.out.println("Echange文件新增："+a);
+                processArea.append("新增图："+a+"\n");
                 hasChanged = true;
             }
         }
@@ -388,14 +398,15 @@ public class ModelMerge {
     ImageIcon tmpIcon;
     public void setLabelIcon(JLabel label,String url){
         if(url.indexOf("001")>=0){
-            setLabelIcon(label,url,120,70);
+            setLabelIcon(label,url,120,70,Image.SCALE_SMOOTH);
         }else {
-            setLabelIcon(label,url,90,90);
+            setLabelIcon(label,url,90,90,Image.SCALE_DEFAULT);
         }
+
     }
-    public void setLabelIcon(JLabel label,String url,int w,int h){
+    public void setLabelIcon(JLabel label,String url,int w,int h,int convertType){
         tmpIcon = new ImageIcon(System.getProperty("user.dir")+ File.separator+url);
-        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, Image.SCALE_DEFAULT));
+        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, convertType));
         label.setIcon(tmpIcon);
     }
 
@@ -430,7 +441,6 @@ public class ModelMerge {
 
                 try {
                     BufferedReader reader = new BufferedReader(new FileReader(tmpFile));
-                    String line;
                     boolean isDelete = true;
                     errContent.add(a+":");
                     while ((line = reader.readLine())!= null){
@@ -440,8 +450,11 @@ public class ModelMerge {
                             isDelete = false;
                         }
                     }
+
                     if(isDelete) {
-                        System.out.println("======= 删除"+tmpFile.toString()+tmpFile.delete()+"=======");
+                        reader.close();
+                        tmpFile.exists();
+                        System.out.println("======= 删除"+tmpFile.toString()+" : "+tmpFile.delete()+"=======");
                         errContent.remove(errContent.size()-1);
                     }
                     reader.close();

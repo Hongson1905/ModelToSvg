@@ -15,7 +15,7 @@ public class RemoteChange {
     //本地文件输出流
     private FileOutputStream fileOut = null;
     //本地文件输入流
-    private FileWriter writer = null;
+    private Writer writer = null;
     private BufferedReader reader = null;
     public RemoteChange(String host,String user,String psw){
         makeConn = new MakeConn(host,user,psw);
@@ -67,13 +67,17 @@ public class RemoteChange {
     public boolean readLocalFile(String target){
         String line;
         try {
-            reader = new BufferedReader(new FileReader(localFile));
+            InputStreamReader isr = new InputStreamReader(new FileInputStream(localFile), "UTF-8");
+            reader = new BufferedReader(isr);
             while ((line = reader.readLine())!= null){
+                System.out.println("Exchange-read:"+line);
                 if(line.indexOf(target)>=0) {
                     System.out.println(line);
                     return true;
                 }
             }
+            isr.close();
+            reader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -85,9 +89,10 @@ public class RemoteChange {
     //在文件尾部增加内容
     public boolean writeFile(String content){
         try {
-            writer=new FileWriter(localFile,true);
+            writer=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(localFile,true), "UTF-8"));
             writer.write("\n"+content);
             writer.close();
+            System.out.println("Exchange-write:"+content);
             return true;
         } catch (IOException e) {
             e.printStackTrace();

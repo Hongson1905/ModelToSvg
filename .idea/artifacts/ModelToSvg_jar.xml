@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ModelToSvg:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ModelToSvg_jar</output-path>
+    <root id="archive" name="ModelToSvg.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ModelToSvg" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../more-jar/dm-connector-java-2013.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../more-jar/substance/substance-4.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../more-jar/ganymed-ssh2-build210/ganymed-ssh2-build210.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

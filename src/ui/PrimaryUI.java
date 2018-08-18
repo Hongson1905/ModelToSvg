@@ -67,10 +67,10 @@ public class PrimaryUI {
         mergeButton = new CircleButton(" 图模转换 ");
         mergeButton.setBUTTON_COLOR1(new Color(125, 161, 237));
         mergeButton.setBUTTON_COLOR2(new Color(91, 118, 173));
-        mergeButton.setBUTTON_FOREGROUND_COLOR1(new Color(106,240,79));
-        mergeButton.setBUTTON_FOREGROUND_COLOR2(new Color(106,240,79));
+//        mergeButton.setBUTTON_FOREGROUND_COLOR1(new Color(106,240,79));
+//        mergeButton.setBUTTON_FOREGROUND_COLOR2(new Color(106,240,79));
         mergeButton.setClickTran(0.8F);
-        mergeButton.setExitTran(0.3F);
+        mergeButton.setExitTran(0.5F);
         Dimension preferredSize = new Dimension(230,40);//设置尺寸
         mergeButton.setPreferredSize(preferredSize);
         mergeButton.setActionCommand("allMerge");

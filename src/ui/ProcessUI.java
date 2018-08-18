@@ -58,20 +58,22 @@ public class ProcessUI {
         subTitleField.setOpaque(false);
 
         sLabel = new JLabel();
-        setLabelIcon(sLabel,"src/data/stop.png",40,40);
+        setLabelIcon(sLabel,"src/data/stop.png",40,40,Image.SCALE_SMOOTH);
         sLabel.setToolTipText("stop");
+        sLabel.setBackground(new Color(139,204,245));
         sLabel.addMouseListener(processUImouseListener);
 
         backLabel = new JLabel();
-        setLabelIcon(backLabel,"src/data/back.png",30,30);
+        setLabelIcon(backLabel,"src/data/back.png",30,30,Image.SCALE_SMOOTH);
         backLabel.setToolTipText("back");
+        backLabel.setBackground(new Color(139,204,245));
         backLabel.addMouseListener(processUImouseListener);
 
         topPanel.add(titleLabel, GridPref.getGridPref(0,0,1,2,0.0,0.0,10,1,0,30,0,15,0,0));
         topPanel.add(titleField,GridPref.getGridPref(1,0,1,1,1.0,0.0,10,1));
         topPanel.add(subTitleField,GridPref.getGridPref(1,1,1,1,1.0,0.0,17,1));
         topPanel.add(sLabel,GridPref.getGridPref(2,0,1,1,0.0,0.0,10,1,0,0,5,12,0,0));
-        topPanel.add(backLabel,GridPref.getGridPref(2,1,1,1,0.0,0.0,10,1,5,5,0,7,0,0));
+        topPanel.add(backLabel,GridPref.getGridPref(2,1,1,1,0.0,0.0,10,0,5,5,0,17,0,0));
 
         contentPanel = new JPanel();
         processLabel = new JLabel();
@@ -80,8 +82,9 @@ public class ProcessUI {
         contentPanel.setLayout(new GridBagLayout());
         contentPanel.add(processArea,GridPref.getGridPref(0,0,1,1,1.0,1.0,10,1));
         contentScrollPanel = new JScrollPane(contentPanel);
-        contentScrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        contentScrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         contentScrollPanel.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+        contentScrollPanel.getVerticalScrollBar().setValue(contentScrollPanel.getVerticalScrollBar().getMaximum());
         contentScrollPanel.getVerticalScrollBar().setValue(contentScrollPanel.getVerticalScrollBar().getMaximum());
         panel.add(topPanel, GridPref.getGridPref(0,0,1,1,1.0,0.1,10,1));
         panel.add(contentScrollPanel,GridPref.getGridPref(0,1,1,1,1.0,1.0,10,1,0,0,20,0,0,0));
@@ -156,15 +159,15 @@ public class ProcessUI {
     //为label添加图标
     public void setLabelIcon(JLabel label,String url){
         if(url.indexOf("001")>=0){
-            setLabelIcon(label,url,120,70);
+            setLabelIcon(label,url,120,70,Image.SCALE_SMOOTH);
         }else {
-            setLabelIcon(label,url,90,90);
+            setLabelIcon(label,url,90,90,Image.SCALE_DEFAULT);
         }
 
     }
-    public void setLabelIcon(JLabel label,String url,int w,int h){
+    public void setLabelIcon(JLabel label,String url,int w,int h,int convertType){
         tmpIcon = new ImageIcon(System.getProperty("user.dir")+ File.separator+url);
-        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, Image.SCALE_DEFAULT));
+        tmpIcon.setImage(tmpIcon.getImage().getScaledInstance(w, h, convertType));
         label.setIcon(tmpIcon);
     }
 
@@ -176,18 +179,22 @@ public class ProcessUI {
             tmpLabel = (JLabel) e.getSource();
             if("stop".equals(tmpLabel.getToolTipText())){
                 stopNowProc();
-                setLabelIcon(sLabel,"src/data/start.png",40,40);
-                sLabel.setToolTipText("start");
+                setLabelIcon(tmpLabel,"src/data/start.png",40,40,Image.SCALE_SMOOTH);
+                tmpLabel.setToolTipText("start");
+                tmpLabel.repaint();
+                tmpLabel.setOpaque(false);
                 processArea.append("=== stopped ===");
                 processArea.append("\n");
                 processArea.repaint();
 
             }else if("back".equals(tmpLabel.getToolTipText())){
-                primaryUI = new PrimaryUI(panel);
                 stopNowProc();
+                primaryUI = new PrimaryUI(panel);
             }else if("start".equals(tmpLabel.getToolTipText())){
-                setLabelIcon(sLabel,"src/data/stop.png",40,40);
-                sLabel.setToolTipText("stop");
+                setLabelIcon(tmpLabel,"src/data/stop.png",40,40,Image.SCALE_SMOOTH);
+                tmpLabel.setToolTipText("stop");
+                tmpLabel.repaint();
+                tmpLabel.setOpaque(false);
                 if("模型导入".equals(subTitleField.getText())){
                     modelMerge.startInput(titleLabel,subTitleField,processArea);
                 }else if("模型拼接".equals(subTitleField.getText())){
@@ -213,20 +220,20 @@ public class ProcessUI {
         @Override
         public void mouseEntered(MouseEvent e) {
             tmpLabel = (JLabel) e.getSource();
-            if("stop".equals(tmpLabel.getToolTipText())){
-
-            }else if("back".equals(tmpLabel.getToolTipText())){
-
+            if("stop".equals(tmpLabel.getToolTipText())||"back".equals(tmpLabel.getToolTipText())){
+                tmpLabel.setOpaque(true);
+                tmpLabel.repaint();
+                tmpLabel.validate();
             }
         }
 
         @Override
         public void mouseExited(MouseEvent e) {
             tmpLabel = (JLabel) e.getSource();
-            if("stop".equals(tmpLabel.getToolTipText())){
-
-            }else if("back".equals(tmpLabel.getToolTipText())){
-
+            if("stop".equals(tmpLabel.getToolTipText())||"back".equals(tmpLabel.getToolTipText())){
+                tmpLabel.setOpaque(false);
+                tmpLabel.repaint();
+                tmpLabel.validate();
             }
         }
     };
@@ -239,6 +246,7 @@ public class ProcessUI {
                 makeConn.getSession().execCommand("killall "+PropertyGet.prop.getProperty("svgModelZip"));
                 makeConn.getSession().close();
                 ModelMerge.depand = false;
+                setLabelIcon(titleLabel,"src/data/input.png");
 
             } catch (IOException e1) {
                 e1.printStackTrace();
@@ -248,6 +256,7 @@ public class ProcessUI {
                 makeConn.getSession().execCommand("killall "+PropertyGet.prop.getProperty("model_merge_proc"));
                 makeConn.getSession().close();
                 ModelMerge.depand = false;
+                setLabelIcon(titleLabel,"src/data/merge.png");
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
@@ -256,6 +265,7 @@ public class ProcessUI {
                 makeConn.getSession().execCommand("killall "+PropertyGet.prop.getProperty("model_convert_proc"));
                 makeConn.getSession().close();
                 ModelMerge.depand = false;
+                setLabelIcon(titleLabel,"src/data/convert.png");
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
